@@ -66,6 +66,7 @@ h4{
 .menu li{
     display: inline;
     font-family: 'Quicksand', sans-serif;
+    text-shadow: none;
 }
 .menu li a:hover{
     background-color: greenyellow;
@@ -86,6 +87,7 @@ h4{
     width: 48%;
     padding: 10px;
     margin-left: 10px;
+    margin-bottom: 700px;
 }
 #birdImg {
     width: 50%;
