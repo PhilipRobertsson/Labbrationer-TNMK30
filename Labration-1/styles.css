@@ -12,8 +12,7 @@ ul {
 }
 p{
     font-family: 'Quicksand', sans-serif;
-    font-size: large;
-    font-weight: 500;
+    font-size: larger;
     text-shadow: 1px 1px darkgray;
 }
 h1{
