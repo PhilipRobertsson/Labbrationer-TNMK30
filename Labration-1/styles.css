@@ -45,6 +45,13 @@ h1{
     margin-right: 10px;
     background-color: whitesmoke;
 }
+.divRight{
+    float: right;
+    width: 45%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: whitesmoke;
+}
 #birdImg {
     border: 20px black solid;
 }
@@ -53,9 +60,10 @@ h1{
     width: 25vw;
 }
 table {
-
+    border-collapse: collapse;
+    width: 50%;
 }
-th, tr {
+th, tr, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
