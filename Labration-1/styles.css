@@ -1,3 +1,17 @@
+ul {
+    background-color: aqua; 
+    border: 20px black solid;
+    margin: 5px;
+}
+li {
+    padding: 10px;
+}
+.text1 {
+    background-color: aqua; 
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
 #birdImg {
     border: 20px black solid;
 }
