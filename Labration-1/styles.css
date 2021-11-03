@@ -1,20 +1,20 @@
 body{
     background-image:radial-gradient(#87ab08, #c7c116, 	#4A412A);
 }
-p {
-    font-weight: 900;
-}
 li {
     padding: 10px;
     font-family: 'Quicksand', sans-serif;
     font-size: large;
 }
 ul {
-    font-weight: 900;
+    font-weight: 500;
+    text-shadow: 1px 1px darkgray;
 }
 p{
     font-family: 'Quicksand', sans-serif;
     font-size: large;
+    font-weight: 500;
+    text-shadow: 1px 1px darkgray;
 }
 h1{
     font-family: 'Quicksand', sans-serif;
