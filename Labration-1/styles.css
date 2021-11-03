@@ -45,7 +45,8 @@ h4{
 }
 .text1 {
     background-color: aqua; 
-    text-align: center;    
+    text-align: center;   
+    text-shadow: none; 
     font-family: 'Quicksand', sans-serif;
     font-size: large;
     font-weight: 700;
