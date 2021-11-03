@@ -1,13 +1,30 @@
 li {
     padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
 }
 p{
     font-family: 'Quicksand', sans-serif;
-    font-size: medium;
+    font-size: large;
 }
 h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
     padding-top: 22px;
     padding-left: 8px;
+}
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+}
+h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+}
+h4{
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
 }
 .text1 {
     background-color: aqua; 
