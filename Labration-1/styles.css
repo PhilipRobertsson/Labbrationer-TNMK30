@@ -5,6 +5,10 @@ p{
     font-family: 'Quicksand', sans-serif;
     font-size: medium;
 }
+h1{
+    padding-top: 22px;
+    padding-left: 8px;
+}
 .text1 {
     background-color: aqua; 
     text-align: center;
@@ -12,9 +16,22 @@ p{
     font-size: large;
     font-weight: 700;
 }
-.menu{
+.headerDiv{
     background-color: aquamarine;
-    border-bottom: 20px black;
+    margin: -8px;
+    margin-top: -22px;
+}
+.menu ul{
+    background-color: aqua;
+    list-style-type: none;
+    padding: 5px;
+}
+.menu li{
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu li a:hover{
+    background-color: greenyellow;
 }
 .gillaogilla{
     background-color: aqua; 
