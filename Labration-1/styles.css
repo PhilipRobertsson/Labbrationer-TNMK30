@@ -70,6 +70,9 @@ h4{
 .menu li a:hover{
     background-color: greenyellow;
 }
+.menu li a{
+    text-decoration: none;
+}
 .gillaogilla{
     background-color: aqua; 
     border: 10px black solid;
