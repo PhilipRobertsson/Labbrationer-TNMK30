@@ -109,3 +109,9 @@ th, tr, td {
     text-align: left;
     padding: 8px;
 }
+tr:nth-child(even) {
+    background-color: #afafaf;
+}
+tr:nth-child(odd) {
+    background-color: #e2e2e2;
+  }
