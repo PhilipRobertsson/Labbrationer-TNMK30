@@ -6,12 +6,21 @@ ul {
 li {
     padding: 10px;
 }
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
 .text1 {
     background-color: aqua; 
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
     font-size: large;
     font-weight: 700;
 }
 #birdImg {
     border: 20px black solid;
+}
+#stryk{
+    border: 20px black solid;
+    width: 25vw;
 }
