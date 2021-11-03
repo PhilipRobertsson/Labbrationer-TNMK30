@@ -78,6 +78,7 @@ h4{
     background-color: aqua; 
     border: 10px black solid;
     margin: 5px;
+    text-shadow: none;
 }
 .divLeft{
     float: left;
