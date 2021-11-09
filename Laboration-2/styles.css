@@ -121,4 +121,22 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
     background-color: #e2e2e2;
-  }
+}
+
+@media screen and (max-width: 600px)  {
+    body{
+        background-image: radial-gradient(#d38312, #a6834b ,#a83279);
+    }
+    .divLeft{
+        float: left;
+        width: 100%;
+        padding: 1vw;
+        margin: 1vw;
+    }
+    .divRight{
+        float: left;
+        width: 100%;
+        padding: 1vw;
+        margin: 1vw;
+    }
+}
