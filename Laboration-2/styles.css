@@ -111,6 +111,22 @@ h4{
     padding-left: 10px;
     font-family: 'Press Start 2P', cursive;    
 }
+#shinji img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.shinji{
+    color: hotpink;
+    text-shadow: 1px 1px darkgray;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 table {
     border-collapse: collapse;
     width: 50%;
