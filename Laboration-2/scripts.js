@@ -41,14 +41,17 @@ function homeLoad(){
 }
 
 //Ändra utseende
+var clicked = false;
 function changeStyle(){
-    var clicked;
-    if(!clicked){
-        document.body.style.backgroundImage = "radial-gradient(#d38312, #a6834b ,#a83279)";
+    
+    
+    if(clicked){
+        document.body.style.backgroundImage = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        console.log(clicked);
         clicked = false;
-    }else{
-        document.body.style.backgroundImage = "radial-gradient(#87ab08, #c7c116, 	#4A412A)";
-        console.
+    } else if(!clicked){
+        document.body.style.backgroundImage = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        console.log(clicked);
         clicked = true;
     }
 }
