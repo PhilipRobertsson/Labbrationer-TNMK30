@@ -26,3 +26,8 @@ function homeLoad(){
     timerOn = true;
 	uppdate = setInterval(liveClock, 1000);
 }
+
+//Ändra utseende
+function changeStyle(){
+    document.getElementsByClassName("headerDiv").styles.backgroundColor = "#0000FF";
+}

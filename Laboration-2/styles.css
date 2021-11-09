@@ -12,7 +12,7 @@ ul {
 }
 p{
     font-family: 'Quicksand', sans-serif;
-    font-size: larger;
+    font-size: 2vw;
     text-shadow: 1px 1px darkgray;
 }
 h1{
@@ -47,7 +47,7 @@ h4{
     text-align: center;   
     text-shadow: none; 
     font-family: 'Quicksand', sans-serif;
-    font-size: large;
+    font-size: 2vw;
     font-weight: 700;
     padding: 10px;
     margin-left: 25%;
@@ -82,15 +82,15 @@ h4{
 }
 .divLeft{
     float: left;
-    width: 48%;
-    padding: 10px;
-    margin-right: 10px;
+    width: 46vw;
+    padding: 1vw;
+    margin-right: 1vw;
 }
 .divRight{
     float: right;
-    width: 48%;
-    padding: 10px;
-    margin-left: 10px;
+    width: 46vw;
+    padding: 1vw;
+    margin-left: 1vw;
 }
 #tabelColumn{
     margin-bottom: 700px;
