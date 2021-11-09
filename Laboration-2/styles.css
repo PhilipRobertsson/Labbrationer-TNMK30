@@ -82,13 +82,13 @@ h4{
 }
 .divLeft{
     float: left;
-    width: 46vw;
+    width: 45vw;
     padding: 1vw;
     margin-right: 1vw;
 }
 .divRight{
     float: right;
-    width: 46vw;
+    width: 45vw;
     padding: 1vw;
     margin-left: 1vw;
 }
