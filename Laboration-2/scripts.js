@@ -29,5 +29,5 @@ function homeLoad(){
 
 //Ändra utseende
 function changeStyle(){
-    document.getElementsByClassName("headerDiv").styles.backgroundColor = "#0000FF";
+    alert("lol funktionen verkar funka");
 }
