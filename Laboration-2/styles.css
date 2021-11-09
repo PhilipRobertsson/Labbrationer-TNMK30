@@ -68,7 +68,7 @@ h4{
     font-family: 'Quicksand', sans-serif;
     text-shadow: none;
 }
-.menu li a:hover{
+.menu li:hover{
     background-color: greenyellow;
 }
 .menu li a{
@@ -124,8 +124,10 @@ tr:nth-child(odd) {
 }
 
 @media screen and (max-width: 600px)  {
-    body{
-        background-image: radial-gradient(#d38312, #a6834b ,#a83279);
+    p{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 5vw;
+        text-shadow: 1px 1px darkgray;
     }
     .divLeft{
         float: left;

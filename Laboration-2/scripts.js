@@ -77,6 +77,19 @@ function changeStyle(){
     }
     loadStyle();
 }
+
+function changeP(){
+   var list = document.getElementsByTagName("p");
+   for (var i = 0; i < list.length; i++){
+       list[i].style.fontFamily = "'Press Start 2P', cursive";
+       list[i].style.fontSize = "larger";
+   }
+   
+   
+    //document.getElementsByTagName("p").forEach(element => {
+       // element.style.fontFamily = "'Press Start 2P', cursive"});
+}
+
 function loadStyle(){
     /*if(currentStyle == ""){
         document.body.style.backgroundImage = "radial-gradient(#87ab08, #c7c116, #4A412A)";
