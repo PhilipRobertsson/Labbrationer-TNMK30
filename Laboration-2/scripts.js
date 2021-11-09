@@ -1,7 +1,6 @@
 //var timerON = null;
 var uppdate = null;
 var currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
-//var secretVar = null;
 //This part of the code initializes everything needed for the timer
 function liveClock(){
 	var date = new Date();
@@ -19,6 +18,7 @@ function liveClock(){
 	var t = date.toLocaleTimeString();
 	document.getElementById("liveClock").innerHTML = t + " " + day;
 }
+
 /*
 //This part of the code uppdates the live clock
 function stopLiveCock() {
@@ -36,13 +36,15 @@ if(!timerON){
 }
 */
 
-
 function homeLoad(){
 	uppdate = setInterval(liveClock, 1000);
     //timerON = true;
     loadStyle();
     //changeStyle();
     //document.cookie = "background = " + currentStyle; 
+    //document.cookie = "state=1; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
+    //document.cookie = "state=2; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
+    loadCookie();
 }
 
 //Ändra utseende
@@ -52,7 +54,7 @@ function homeLoad(){
 function changeStyle(){
     //currentStyle = document.body.style.backgroundImage;
     //currentStyle = document.cookie;
-    console.log(currentStyle);
+    //console.log(currentStyle);
     /**
      * 
      * clicked = !clicked;
@@ -70,12 +72,10 @@ function changeStyle(){
     
     if(currentStyle == "radial-gradient(#d38312, #a6834b ,#a83279)"){
         currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
-        document.cookie = "state=2; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
-        //secretVar = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        document.cookie = "state=1; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
     } else if(currentStyle == "radial-gradient(#87ab08, #c7c116, #4A412A)"){
         currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)";
-        //secretVar = "radial-gradient(#d38312, #a6834b ,#a83279)";
-        document.cookie = "state=1; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
+        document.cookie = "state=2; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
     }
     loadStyle();
 }
@@ -110,12 +110,33 @@ function loadStyle(){
     console.log(secretVar);
      */
     //document.cookie = "state=1; expires=Thu, 1 Dec 2021 12:00:00 UTC; path=/";
-    let x = document.cookie;
+    
+    
+    let x = document.cookie.slice(-1);
+    console.log(x);
     if(x == 1){
-        currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
         document.body.style.backgroundImage = currentStyle;
     } else if(x == 2){
-        currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)"
+        currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)"
         document.body.style.backgroundImage = currentStyle;
     }
+    
 }
+/*
+function loadCookie(){
+    /*
+    let x = document.cookie.slice(-1);
+    console.log(x);
+
+    if(x == 1){
+        currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        document.body.style.backgroundImage = currentStyle;
+    }
+    else if(x == 2){
+        currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)"
+        document.body.style.backgroundImage = currentStyle;
+    }
+    
+}
+*/
