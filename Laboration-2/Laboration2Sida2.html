@@ -19,13 +19,15 @@
     <body onload="homeLoad()">
         <div class="headerDiv">
             <h1>Vår Favorit Bok</h1>
-            <p id="liveClock">Timme/minut/sekund/dag</p>
+            <strong id="liveClock">Timme/minut/sekund/dag</strong>
             <div class="menu">
                 <ul>
                     <li><a id="keepStyleLink1" href="Labration2.html">Landningssida</a></li>
                     <li><a id="keepStyleLink2" href="Laboration2Sida2.html">Vår Favorit Bok</a></li>
-                    <li onclick="changeStyle()">Ändra utseende</li>
-                    <li onclick="changeP()">Ändra paragrafer</li>
+                    <div class="settings">
+                        <li onclick="changeStyle()">Ändra utseende</li>
+                        <li onclick="changeP()">Ändra paragrafer</li>
+                    </div>
                 </ul>
             </div>
         </div>
