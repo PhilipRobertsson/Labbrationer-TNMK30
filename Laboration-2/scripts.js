@@ -28,5 +28,5 @@ function homeLoad(){
 
 //Ändra utseende
 function changeStyle(){
-    alert("lol funktionen verkar funka");
+    document.getElementById("stryk").style.width = "100%";
 }
