@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name='Author' content='Max Wiklundh & Philip Robertsson'>
+		<meta name='Description' content='Laboration 1'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laboration 2</title>
+        <link rel="stylesheet" media="screen" href="styles.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <script src="scripts.js"></script>
+    </head>
+    <body onload="homeLoad()">
+        <div class="headerDiv">
+            <h1>Välkommen till Philip och Maxs hemsida</h1>
+            <strong id="liveClock">Timme/minut/sekund/dag</strong>
+            <!--<button onclick="startLiveCock()">Start timer</button>
+			<button onclick="stopLiveCock()">Stop timer</button><br>-->
+            
+            <div class="menu">
+                <ul>
+                    <li><a id="keepStyleLink1" href="Labration2.html">Landningssida</a></li>
+                    <li><a id="keepStyleLink2" href="Laboration2Sida2.html">Vår Favorit Bok</a></li>
+                    <div class="settings">
+                        <li onclick="changeStyle()">Ändra utseende</li>
+                        <li onclick="changeP()">Ändra paragrafer</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <h3>Obligatorisk fågel</h3>
+                <a href="https://www.google.se/?gws_rd=ssl">
+                    <img id="birdImg" src="Images/LowSocietyHumans.jpg" alt="A picture link to somewhere">
+                </a>
+                <p class="text1">Här är en fågel vi tycker om :)</p>
+                <h4>
+                    Rolig info om oss!
+                </h4>
+                <p>
+                    Vi bor i Norrköping som är känt för denna bygnaden, strykhjärnet
+                </p>
+                <a href="secret.html">
+                    <img id="stryk" src="Images/img084.jpg" alt="Strykhjärnet">
+                </a>
+            </div>
+            <div>
+                <p>
+                    Vi går båda <a href="https://liu.se/utbildning/program/6cmen">MT-programmet</a> på Linköpings universitet och gillar 
+                    att äta <i>glass</i>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>Hobbyer & Coola saker</h3>
+            <div class="divLeft">
+                <h4>Saker vi gillar att göra:</h4>
+                <ul class="gillaogilla">
+                    <li><a href="https://www.norinsost.se/">Ost</a></li>
+                    <li><a href="https://weber.itn.liu.se/~nikro27/tnmk30-2020/index.php">Plugga</a></li>
+                    <li>Lära oss nya saker på <a href="https://www.flashback.org/">Flashback</a></li>
+                </ul>
+            </div>
+            <div class="divRight">
+                <h4>Saker vi inte gillar lika mycket</h4>
+                <ul class="gillaogilla">
+                    <li><a href="https://www.livsmedelsverket.se/livsmedel-och-innehall/tillagning-och-forvaring/avsvalning-forvaring/mogliga_livsmedel">Dålig Ost</a></li>
+                    <li>Logik</li>
+                    <li>Fakta</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
