@@ -84,10 +84,10 @@ function changeP(){
        list[i].style.fontFamily = "'Press Start 2P', cursive";
        list[i].style.fontSize = "larger";
    }
+   var bokInfo = document.getElementById("bokInfo");
+   for (var i = 0; i < bokInfo.length; i++)
+   document.getElementById("bokInfo").children.style.fontFamily = "'Press Start 2P', cursive";
    
-   
-    //document.getElementsByTagName("p").forEach(element => {
-       // element.style.fontFamily = "'Press Start 2P', cursive"});
 }
 
 function loadStyle(){
