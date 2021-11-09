@@ -1,5 +1,7 @@
 var timerON = null;
 var uppdate = null;
+var currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+//var secretVar = null;
 //This part of the code initializes everything needed for the timer
 function liveClock(){
 	var date = new Date();
@@ -38,20 +40,58 @@ if(!timerON){
 function homeLoad(){
 	uppdate = setInterval(liveClock, 1000);
     //timerON = true;
+    loadStyle();
+    //changeStyle();
+    //document.cookie = "background = " + currentStyle; 
 }
 
 //Ändra utseende
-var clicked = false;
+//var clicked = false;
+//var currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+//var currentStyle = "";
 function changeStyle(){
-    
-    
+    //currentStyle = document.body.style.backgroundImage;
+    //currentStyle = document.cookie;
+    console.log(currentStyle);
+    /**
+     * 
+     * clicked = !clicked;
     if(clicked){
         document.body.style.backgroundImage = "radial-gradient(#87ab08, #c7c116, #4A412A)";
         console.log(clicked);
-        clicked = false;
+        //clicked = false;
     } else if(!clicked){
         document.body.style.backgroundImage = "radial-gradient(#d38312, #a6834b ,#a83279)";
         console.log(clicked);
-        clicked = true;
+       // clicked = true;
     }
+    //clicked == !clicked;
+     */
+    
+    if(currentStyle == "radial-gradient(#d38312, #a6834b ,#a83279)"){
+        currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        secretVar = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+    } else if(currentStyle == "radial-gradient(#87ab08, #c7c116, #4A412A)"){
+        currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        secretVar = "radial-gradient(#d38312, #a6834b ,#a83279)";
+    }
+    loadStyle();
+}
+function loadStyle(){
+    /*if(currentStyle == ""){
+        document.body.style.backgroundImage = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        console.log(clicked);
+    } else if(clicked){
+        document.body.style.backgroundImage = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        console.log(clicked);
+    } */
+    document.body.style.backgroundImage = currentStyle;
+    /**
+     * if(secretVar != null){
+        document.getElementById("keepStyleLink1").setAttribute("href", "Labration2.html&Key=" + secretVar);
+    }
+    console.log(secretVar);
+     */
+    
+    
 }
