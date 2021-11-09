@@ -1,4 +1,4 @@
-var timerON = null;
+//var timerON = null;
 var uppdate = null;
 var currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
 //var secretVar = null;
