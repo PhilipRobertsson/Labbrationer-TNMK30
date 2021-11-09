@@ -70,10 +70,12 @@ function changeStyle(){
     
     if(currentStyle == "radial-gradient(#d38312, #a6834b ,#a83279)"){
         currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)";
-        secretVar = "radial-gradient(#87ab08, #c7c116, #4A412A)";
+        document.cookie = "state=2; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
+        //secretVar = "radial-gradient(#87ab08, #c7c116, #4A412A)";
     } else if(currentStyle == "radial-gradient(#87ab08, #c7c116, #4A412A)"){
         currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)";
-        secretVar = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        //secretVar = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        document.cookie = "state=1; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
     }
     loadStyle();
 }
@@ -92,6 +94,13 @@ function loadStyle(){
     }
     console.log(secretVar);
      */
-    
-    
+    //document.cookie = "state=1; expires=Thu, 1 Dec 2021 12:00:00 UTC; path=/";
+    let x = document.cookie;
+    if(x == 1){
+        currentStyle = "radial-gradient(#d38312, #a6834b ,#a83279)";
+        document.body.style.backgroundImage = currentStyle;
+    } else if(x == 2){
+        currentStyle = "radial-gradient(#87ab08, #c7c116, #4A412A)"
+        document.body.style.backgroundImage = currentStyle;
+    }
 }
