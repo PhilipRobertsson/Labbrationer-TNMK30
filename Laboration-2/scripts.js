@@ -15,7 +15,7 @@ function liveClock(){
 
     var day = weekday[date.getDay()];
 	var t = date.toLocaleTimeString();
-	document.getElementById("liveClock").innerHTML = t + day;
+	document.getElementById("liveClock").innerHTML = t + " " + day;
 }
 /*
 //This part of the code uppdates the live clock
