@@ -2,9 +2,10 @@ var timerON = null;
 var uppdate = null;
 //This part of the code initializes everything needed for the timer
 function liveClock(){
-	var d = new Date();
-	var t = d.toLocaleTimeString();
-	document.getElementById("liveClock").innerHTML = t;
+	var date = new Date();
+    var day = date.getDay();
+	var t = date.toLocaleTimeString();
+	document.getElementById("liveClock").innerHTML = t + day;
 }
 /*
 //This part of the code uppdates the live clock
