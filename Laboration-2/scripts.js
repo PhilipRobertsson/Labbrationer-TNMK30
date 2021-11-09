@@ -21,7 +21,6 @@ if(!timerOn){
     }
 }
 
-
 function homeLoad(){
     timerOn = true;
 	uppdate = setInterval(liveClock, 1000);
