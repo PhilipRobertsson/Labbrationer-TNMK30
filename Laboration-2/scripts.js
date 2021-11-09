@@ -3,7 +3,17 @@ var uppdate = null;
 //This part of the code initializes everything needed for the timer
 function liveClock(){
 	var date = new Date();
-    var day = date.getDay();
+
+    const weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    var day = weekday[date.getDay()];
 	var t = date.toLocaleTimeString();
 	document.getElementById("liveClock").innerHTML = t + day;
 }
