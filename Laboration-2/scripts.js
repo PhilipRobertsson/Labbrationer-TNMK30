@@ -6,24 +6,27 @@ function liveClock(){
 	var t = d.toLocaleTimeString();
 	document.getElementById("liveClock").innerHTML = t;
 }
+/*
 //This part of the code uppdates the live clock
 function stopLiveCock() {
-    if(timerOn){
+    if(timerON){
         clearInterval(uppdate);
-        timerOn = false;
+        timerON = false;
     }
 }
 //This part stops the live clock if the clock is active
 function startLiveCock() {
-if(!timerOn){
+if(!timerON){
     uppdate = setInterval(liveClock, 1000);
-    timerOn = true;
+    timerON = true;
     }
 }
+*/
+
 
 function homeLoad(){
-    timerOn = true;
 	uppdate = setInterval(liveClock, 1000);
+    //timerON = true;
 }
 
 //Ändra utseende
