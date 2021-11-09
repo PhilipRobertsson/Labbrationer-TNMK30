@@ -130,13 +130,13 @@ tr:nth-child(odd) {
     .divLeft{
         float: left;
         width: 100%;
-        padding: 1vw;
+        padding: 0vw;
         margin: 1vw;
     }
     .divRight{
         float: left;
         width: 100%;
-        padding: 1vw;
+        padding: 0vw;
         margin: 1vw;
     }
 }
