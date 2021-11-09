@@ -104,7 +104,8 @@ h4{
     border: 4px solid black;
 }
 #liveClock{
-    padding-left: 10px;    
+    padding-left: 10px;
+    font-family: 'Press Start 2P', cursive;    
 }
 table {
     border-collapse: collapse;
