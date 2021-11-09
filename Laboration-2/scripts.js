@@ -44,7 +44,7 @@ function homeLoad(){
     //document.cookie = "background = " + currentStyle; 
     //document.cookie = "state=1; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
     //document.cookie = "state=2; expires=Thu, 10 Nov 2021 12:00:00 UTC; path=/";
-    loadCookie();
+    //loadCookie();
 }
 
 //Ändra utseende
