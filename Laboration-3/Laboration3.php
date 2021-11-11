@@ -18,8 +18,19 @@
 </head>
 
 <body>
+    <?php include("blog.txt");    ?>
+
     <?php
     echo "My first PHP script!";
     ?>
 
+
+    <?php
+    $author    =    $_POST['author'];            //	Namnet	på	formulärfälten	bestäms												
+    $heading    =    $_POST['heading'];    //	med	attribut	i	HTML-koden för	formuläret				
+    $entry    =    $_POST['entry'];
+    print("<h1>$heading</h1>\n");
+    print("<p><em>$author</em></p>\n");
+    print("<p>$entry</p>\n");
+    ?>
 </body>
