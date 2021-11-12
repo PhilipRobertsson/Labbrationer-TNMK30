@@ -64,7 +64,7 @@ h4{
     padding: 5px;
 }
 .menu li{
-    display: inline;
+    display: inline-flex;
     font-family: 'Quicksand', sans-serif;
     text-shadow: none;
 }
@@ -93,8 +93,7 @@ h4{
     margin-left: 1vw;
 }
 .settings{
-    display: inline;
-    padding-left: 67vw;
+    float: right;
 }
 #tabelColumn{
     margin-bottom: 700px;
