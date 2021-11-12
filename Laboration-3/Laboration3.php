@@ -26,9 +26,18 @@
 
 
     <?php
-    $author    =    $_POST['author'];            //	Namnet	på	formulärfälten	bestäms												
-    $heading    =    $_POST['heading'];    //	med	attribut	i	HTML-koden för	formuläret				
-    $entry    =    $_POST['entry'];
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $author    =    test_input($_POST['author']);            //	Namnet	på	formulärfälten	bestäms												
+        $heading    =    test_input($_POST['heading']);    //	med	attribut	i	HTML-koden för	formuläret				
+        $entry    =    test_input($_POST['entry']);
+    }
+    
+    function test_input($data){
+        $data = trim($data); 
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     print("<h1>$heading</h1>\n");
     print("<p><em>$author</em></p>\n");
     print("<p>$entry</p>\n");

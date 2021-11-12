@@ -6,13 +6,16 @@
 
 <body>
     <h1>Twitter med oändligt många tecken wow!</h1>
-    <form action="Laboration3.php" method="get">
+    <form  method="post" action= '<?php echo htmlspecialchars($_SERVER["Laboration3.php"]);?>'> <!--PHP_SELF-->
+        
         <label for="username">Name:</label>
-        <input type="text" id="username" name="username" placeholder="Name" autofocus><br>
+        <input type="text" id="author" name="username" placeholder="Name" autofocus>
+        <label for="pwd">Password:</label>
+        <input type="'text" id="pwd" name="pwd" placeholder="Password"><br>
         <label for="rubrik">Title:</label>
-        <input type="text" id="rubrik" name="rubrik" maxlength="25" placeholder="Title"><br>
+        <input type="text" id="heading" name="rubrik" maxlength="25" placeholder="Title"><br>
         <label for="conent">Content</label><br>
-        <textarea id="content" name="content" rows="6" cols="47" readonly></textarea><br>
+        <textarea id="entry" name="content" rows="6" cols="47"></textarea><br>
         <input type="submit">
     </form>
 </body>
