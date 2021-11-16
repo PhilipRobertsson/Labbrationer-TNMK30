@@ -33,10 +33,10 @@
 		</div>
 		<div>
 			<form action="Labb3_debug.php" method="get"> <!--PHP_SELF-->
-				<label for="numPosts">Number Of Posts:</label>
+				<label for="numberOfPosts">Number Of Posts:</label>
 				<input type="number" id="numberOfPosts" name="numPosts" placeholder="Number of posts" autofocus>
 
-				<label for="searchInput">Search:</label>
+				<label for="searchID">Search:</label>
 				<input type="text" id="searchID" name="searchInput" placeholder="Enter some text">			
 				<input type="submit"><br>
 			</form>
