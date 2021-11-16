@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='Author' content='Max Wiklundh & Philip Robertsson'>
+    <meta name='Description' content='Laboration 3'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboration 3</title>
+    <link rel="stylesheet" media="screen" href="styles.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="scripts.js"></script>
+</head>
+
+<body id="labb3" onload="homeLoad()">
+	<div class="headerDiv">
+        <h1>Välkommen till Philip och Maxs hemsida</h1>
+        <strong id="liveClock">Timme/minut/sekund/dag</strong>   
+        <div class="menu">
+            <ul>
+                <li><a href="Labration2.html">Landningssida</a></li>
+                <li><a href="Laboration2Sida2.html">Vår Favorit Bok</a></li>
+				<li><a href="labb3sida.html">Skriv inlägg</a></li>
+				<li><a href="Laboration3.php">Blogg</a></li>
+                <li class="settings" onclick="changeStyle()">Ändra utseende</li>
+                <li class="settings" onclick="changeP()">Ändra paragrafer</li>
+            </ul>
+		</div>
+    </div>
+    <h1>Twitter 2.0</h1>
+    <form action="Labb3_debug.php" method="post"> <!--PHP_SELF-->
+        <label for="authorID">Name:</label>
+        <input type="text" id="authorID" name="author" placeholder="Name" autofocus>
+		
+        <label for="passwordID">Password:</label>
+        <input type="'text" id="passwordID" name="password" placeholder="Password" required>
+		
+        <label for="headingID">Title:</label>
+        <input type="text" id="headingID" name="heading" maxlength="25" placeholder="Title"><br>
+		
+        <label for="entryID">Content</label><br>
+        <textarea id="entryID" name="entry" rows="6" cols="47"></textarea><br>
+		
+        <input type="submit">
+    </form>
+</body>
+
+</html>
