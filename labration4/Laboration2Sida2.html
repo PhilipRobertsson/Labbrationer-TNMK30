@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name='Author' content='Max Wiklundh & Philip Robertsson'>
+		<meta name='Description' content='Laboration 1'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laboration 1</title>
+        <link rel="stylesheet" media="screen" href="styles.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <script src="scripts.js"></script>
+    </head>
+    <body onload="homeLoad()">
+        <div class="headerDiv">
+            <h1>Vår Favorit Bok</h1>
+            <strong id="liveClock">Timme/minut/sekund/dag</strong>
+            <div class="menu">
+                <ul>
+                    <li><a id="keepStyleLink1" href="Labration2.html">Landningssida</a></li>
+                    <li><a id="keepStyleLink2" href="Laboration2Sida2.html">Vår Favorit Bok</a></li>
+					<li><a href="labb3sida.html">Skriv inlägg</a></li>
+					<li><a href="Laboration3.php">Blogg</a></li>
+                    <li class="settings" onclick="changeStyle()">Ändra utseende</li>
+                    <li class="settings" onclick="changeP()">Ändra paragrafer</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divLeft">
+            <h2>The ABCs of Gaming</h2>
+            <p>Vi båda älskar den här boken eftersom den är väldigt lärorik och rolig</p>
+            <h2>Övrig information</h2>
+            <p></p>
+            <ul id="bokInfo" onload = "bokInfo()">
+                <li>Skriven av Linus Sebastian</li>
+                <li>Publiserades November 1, 2020</li>
+                <li>Kostar $14.99 på <a href="https://www.amazon.com/ABCs-Gaming-Alphabet-Little-Gamers/dp/1777303605">Amazon</a></li>
+                <li>Vi gillar den här boken</li>
+                <li>Den bästa sidan är sida 17</li>
+                <li>Den sämsta sidan är sida 9</li>
+                <li>Boken har fått betyget 4.9/5.0 från totalt 177 kunder</li>
+                <li>Som ni kanske skulle kunna gissa från titeln så är boken på engelska. Det tycker jag är coolt</li>
+                <li>Boken publiserades av Creator Warehouse</li>
+                <li>Bokens ISBN-10 kod är 1777303605</li>
+                <li>Bokens ISBN-13 kod är 978-1777303600</li>
+            </ul>
+        </div>
+        <div id="tabelColumn" class="divRight">
+            <img id="bookImg" src="Images/Image2.jpg" alt="A picture of The ABCs of Gaming" width=350>
+            <h2>Page Review</h2>
+            <table>
+                <tr>
+                  <th>Page</th>
+                  <th>Letter</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>A</td>
+                  <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <td>6/10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td>4/10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>D</td>
+                    <td>9/10</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>Z</td>
+                  <td>10/10</td>
+                </tr>
+              </table>
+        </div>
+        <div class="divLeft">
+            <h2>More text about something</h2>
+            <p>I also like other stuff</p>
+        </div>
+    </body>
+</html>
