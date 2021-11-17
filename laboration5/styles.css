@@ -1,0 +1,37 @@
+body{
+	background-color: green;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+
+td, th {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+tr:nth-child(2n) {
+  background: red;
+}
+tr:nth-child(2n+1) {
+  background: pink;
+}
+
+p {
+	width: 700px;
+}
+
+p.SQL {
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+#setImg{
+	border: 3px solid black;
+	display:block;
+	width: 35%;
+}
