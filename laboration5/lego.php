@@ -10,6 +10,6 @@
 
     <script src="scripts.js"></script>
 </head>
-<head>
+<body>
     
-</head>
+</body>
