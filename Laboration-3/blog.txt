@@ -1,7 +1,4 @@
-hello :)
-//	Append	to	file	(a).	Use	"binary	mode"			
-//	(b)	even	for	text	files,	as	recommended
-//	by	the	PHP	documentation.															
+hello :)											
 $blogfile	=	fopen("blog.txt",	"ab");							
 fwrite($blogfile,	"Ny	rad	på	slutet\n");			
 fclose($blogfile);			
