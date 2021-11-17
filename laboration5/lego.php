@@ -11,5 +11,7 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    
+    <?php
+        $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
+    ?>
 </body>
