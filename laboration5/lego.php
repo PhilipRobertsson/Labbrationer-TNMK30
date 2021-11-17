@@ -25,10 +25,22 @@
         }
 
         $result = mysqli_query($connection, $sql_query);
-
+        print("<table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Color</th>
+                        <th>Part name</th>
+                    </tr>");
         while ($row = mysqli_fetch_array($result)){
+            print("<tr>");
+            $quantity = $row['inventory.Quantity'];
+            print("<td>$quantity</td>");
 
+            $color = $row['colors.Colorname'];
+            print("<td>$color</td>");
 
+            $partName = $row['parts.Partname'];
+            print("<td>$partName</td>");
 
             /*
             $heading = $row['entry_heading'];
@@ -41,6 +53,7 @@
             print("<p>$text</p>");
             print("<hr/>");
             */
+            print("</tr>");
         }// end while
         mysqli_close($connection);
     ?>
