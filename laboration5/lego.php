@@ -17,7 +17,8 @@
             die('MySQL connection error');
         }
 
-        $sql_query = "SELECT * FROM phiro138 ORDER BY entry_date DESC LIMIT 20";
+        $sql_query = "SELECT inventory.SetID, inventory.Quantity, colors.Colorname, parts.Partname FROM inventory, colors, parts WHERE inventory.SetID ='375-2' AND inventory.ItemtypeID='P' AND
+        colors.ColorID=inventory.ColorID AND parts.PartID=inventory.ItemID";
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
