@@ -29,7 +29,7 @@ h2{
 h3{
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
-    text-align: center;
+    
 }
 h4{
     font-family: 'Quicksand', sans-serif;
@@ -93,7 +93,7 @@ h4{
     margin-left: 1vw;
 }
 .settings{
-    float: right; 
+	float: right;
 }
 #tabelColumn{
     margin-bottom: 700px;
